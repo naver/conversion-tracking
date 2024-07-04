@@ -1,5 +1,5 @@
 ---
-title: 네이버 광고 전환 추적 Script 설치가이드 (wcs.trans버전)
+title: 네이버 광고 웹 전환 추적 Script 설치가이드 (wcs.trans버전)
 layout: post
 lesson: 1
 ---
