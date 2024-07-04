@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 네이버 광고 전환 추적 가이드
+title: 네이버 광고 웹 전환 추적 설정 가이드
 description: >- # this means to ignore newlines until "baseurl:"
   conversion script install guide
   wcs.trans
