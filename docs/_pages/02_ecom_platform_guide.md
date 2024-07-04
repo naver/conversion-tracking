@@ -185,3 +185,5 @@ Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 
  . 고객센터(전화): 1877-7035 <br>
  . 채널 톡(채팅) 상담 : [https://navercts.channel.io/home](https://navercts.channel.io/home) <br>
  . 공용 Email : navercts@nhndata.com <br>
+
+Ver: 240704_01
