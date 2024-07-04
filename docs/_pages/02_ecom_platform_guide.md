@@ -79,7 +79,7 @@ Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 
 
 ⑥ 제일 하단 `저장` 버튼 클릭
 
-![메이크샵_04]({{"/assets/img/makeshop_04.png"| relative_url}})
+![메이크샵_04]({{"/assets/img/makeshop_03.png"| relative_url}})
 
 
 '구매완료' 외 다른 전환유형 (회원가입, 장바구니, 신청예약, 기타)을 사용하기 위해서는 임대몰에서 제공하는 Skin 등에 Script를 수동으로 삽입하여야 합니다. 
