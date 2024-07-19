@@ -88,7 +88,7 @@ HTTP 모니터링 툴 Fiddler Classic 을 다음과 같이 설정하면 테스�
 
 브라우저를 열고 https://jsongrid.com/ 에 접속합니다.
 HTTP모니터링 툴에서 로그의 `정보`에 해당되는 부분을 복사합니다. (아래는 로그의 `정보`부분 예시 입니다.)
-```
+```js
 {"wa":"s_305c16ba63b1","u":"http://OOOOOO.www267.freesell.co.kr/index.html","e":"http://OOOOOO.www267.freesell.co.kr/","bt":"1721270523","os":"Win32","ln":"ko-KR","sr":"2560x1440","bw":1319,"bh":804,"c":24,"j":"N","jv":"1.8","k":"Y","ct":"","cs":"EUC-KR","tl":"","vs":"0.8.13","nt":1721270775298,"fwb":"1974FD3cvdMsebsbpmSZFtK.1720764497469","ui":"{\"nac\":\"s3aQBMAedgpJB\"}","ext":"{\"wot\":54.60000002384186}"}
 ```
 
@@ -123,7 +123,7 @@ HTTP모니터링 툴에서 로그의 `정보`에 해당되는 부분을 복사�
 #### (1) PV(Page View)로그
 모든 페이지에서 페이지가 로딩할 때마다 발생하는 로그입니다. (새로고침을 할 경우에도 발생합니다)
 PV 로그 발생시, 서버로 전송되는 HTTP(HTTP Request)의 모습은 다음과 같으며 
-```
+```js
 POST https://wcs.naver.com/b HTTP/1.1
 Host: wcs.naver.com
 Connection: keep-alive
