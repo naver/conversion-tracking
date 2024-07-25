@@ -43,11 +43,16 @@ lesson: 1
  . 신 스크립트(trans)버전의 전환유형 string을 넣으실 때(예:  `_conv.type = "OOOOOO";` 에서 `OOOOOO`부분), 사용하고자 하시는 전환유형 string의 앞에 `test_`를 넣으시는 것을 추천드립니다 (예: `add_to_cart` 를 테스트 하신다면, `test_add_to_cart`로 설정) 이렇게 하시면 `add_to_cart` 를 테스트 하시다가, 기존 구 스크립트(cnv)에 의해 발생하는 3번(장바구니)전환이 영구히 필터링 되어버리는 불상사를 방지할 수 있을 것입니다.<br>
  . 테스트하시고 문제 없음이 모두 확인되었을 때 원래 스펙에 있는 전환유형 string을 넣으시는 것을 권장드립니다.
  
-※ 참고<br>
+※ 참고 1 <br>
   . 신 스크립트(trans)버전을 이용하여 테스트를 하실 때, 전환유형 string을 넣으실 때(예:  `_conv.type = "OOOOOO";` 에서 `OOOOOO`부분), 구 스크립트(cnv)버전과 신 스크립트(trans)버전의 mapping이 존재하는 `purchase`, `sign_up`, `add_to_cart`, `lead`, `custom001` 외 다른 string을 사용하시거나<br>
  . 또는 공식문서에 존재하는 string이 아닌 다른 string (예: `test_add_to_cart`)을 사용하셔서 테스트 하시는 것도 가능합니다. <br>
  . 다만, 혹시 모를 실수를 방지하기 위해, 그리고 편의를 위해, 사용하고자 하시는 전환유형 string의 앞에 `test_OOOOOO`와 같이 사용하시는 것이 보다 편리하실 것으로 보여 이 방법을 권장드립니다.<br>
- 
+
+ ※ 참고 2 <br>
+위 내용 관련 궁금한 점이 있으시면, 광고 전환추적 스크립트 설치 공식 아웃소싱 업체인 NHN Data에 아래 방법으로 문의해주시면 친절하게 안내해드리겠습니다.<br>
+ . 고객센터(전화): 1877-7035 <br>
+ . 채널 톡(채팅) 상담 : [https://navercts.channel.io/home](https://navercts.channel.io/home) <br>
+ . 공용 Email : navercts@nhndata.com <br>
 
 ------
 
