@@ -50,4 +50,4 @@ collections:
     output: true
     permalink: /:collection/:path/
 
-page_width: 2000px
+page_width: 1600px
