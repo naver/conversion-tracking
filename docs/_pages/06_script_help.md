@@ -1,9 +1,9 @@
-## 2024-08-14(수)
-
-06_script_help
-
-제목: 네이버 광고 웹 전환 추적 도움말(FAQ)
-
+---
+title: 네이버 광고 웹 전환 추적 도움말(FAQ)
+layout: post
+lesson: 6
+---
+------
 
 ### Q1) (SA, GFA공통) 광고 전환추적이 되지 않습니다. (광고 보고서에 전환지표가 없습니다)
 
@@ -25,11 +25,11 @@ A)
 
 (오류 Case1) 광고 연결 URL(link_url)에 ?가 2개 이상 있는 경우
 URL에 ? 는 1개만 있어야 합니다. 2개 이상의 ?가 있는 경우, 해당 URL은 URL 포맷에 맞지 않아, 광고 클릭시 NaPm파라미터가 붙어도 정상적으로 동작하지 않아 광고 전환추적 또한 동작하지 않습니다.
-틀린 link_url 예시) [http://www.abc.com/index.html?product_id=342&category=32?utm_source=naver_sa&utm_medium=cpc](http://www.abc.com/index.html?product_id=342&category=32?utm_source=naver_sa&utm_medium=cpc) (URL에 ?가 2개 있어, 이 뒤에 NaPm parameter가 붙어도 정상동작하지 않음.)
+틀린 link_url 예시) http://www.abc.com/index.html?product_id=342&category=32?utm_source=naver_sa&utm_medium=cpc(URL에 ?가 2개 있어, 이 뒤에 NaPm parameter가 붙어도 정상동작하지 않음.)
 
 (오류 Case2) 광고 연결 URL(link_url)에 #(anchor)가 있는 경우 
 URL에 페이지의 특정 위치로 이동시키기 위한 #(anchor)가 있는 경우, 그 뒤에 NaPm 파라미터가 있어도, 이를 무시하는 브라우저가 많습니다. 이 경우에도 광고 클릭시 NaPm파라미터가 붙어도 정상적으로 동작하지 않아 광고 전환추적 또한 동작하지 않습니다. 
-틀린 link_url 예시) [http://www.abc.com/index.html?product_id=342&category=32#event](http://www.abc.com/index.html?product_id=342&category=32#event) (URL 끝에 # 가 있어, 이 뒤에 NaPm parameter가 붙어도 정상동작하지 않음.)
+틀린 link_url 예시) http://www.abc.com/index.html?product_id=342&category=32#event (URL 끝에 # 가 있어, 이 뒤에 NaPm parameter가 붙어도 정상동작하지 않음.)
 
 (c) 스크립트가 정상적으로 설치되지 않은 경우
 위 (a)와 같이 테스트를 해 보았고, 최종 랜딩페이지까지 NaPm이 전달 되지만 전환값이 없다면 스크립트에 이상이 있을 수 있습니다. 
@@ -41,7 +41,7 @@ URL에 페이지의 특정 위치로 이동시키기 위한 #(anchor)가 있는 
  - 용도가 정해져 있는 8가지 전환유형: 구매완료, 회원가입, 장바구니, 신청완료, 상품찜(위시리스트), 소식받기/구독, 예약완료, 컨텐츠보기  
  - 사용자가 임의로 사용할 수 있는 전환유형: 사용자정의 #1번 ~ #10번 까지 10가지
 
-전환유형에 대한 자세한 설명은 2.4.2. 전환이벤트 종류 및 Property 설명([https://naver.github.io/conversion-tracking/pages/01_script_guide_wcstrans/#242-%EC%A0%84%ED%99%98%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%A2%85%EB%A5%98-%EB%B0%8F-property-%EC%84%A4%EB%AA%85](https://naver.github.io/conversion-tracking/pages/01_script_guide_wcstrans/#242-%EC%A0%84%ED%99%98%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%A2%85%EB%A5%98-%EB%B0%8F-property-%EC%84%A4%EB%AA%85)) 을 참고해주시기 바랍니다.
+전환유형에 대한 자세한 설명은 [2.4.2. 전환이벤트 종류 및 Property 설명](https://naver.github.io/conversion-tracking/pages/01_script_guide_wcstrans/#242-%EC%A0%84%ED%99%98%EC%9D%B4%EB%B2%A4%ED%8A%B8-%EC%A2%85%EB%A5%98-%EB%B0%8F-property-%EC%84%A4%EB%AA%85) 을 참고해주시기 바랍니다.
 
 (e) 실제 전환이 발생하지 않은 경우
 위와 같은 문제가 없다면 실제 광고기여가 있는 전환이 발생하지 않아 보고서에 전환값이 없을 수 있습니다. 
@@ -49,7 +49,6 @@ URL에 페이지의 특정 위치로 이동시키기 위한 #(anchor)가 있는 
 예를 들어, 구매(purchase)에 대해서 전환스크립트를 설치하였어도, 광고 유입 없이 구매/결제만 발생한 경우에는 광고보고서에 값이 제공되지 않습니다.
 
 ### Q2) (SA, GFA공통) (카페24 임대몰) 전환수에 비해 전환금액이 너무 작습니다. 
-
 유사질문) 전환수는 증가하였는데, 전환금액이 그대로입니다.
 
 A) 
@@ -57,8 +56,8 @@ A) 
 SA보고서 다차원 보고서 '전환'을 선택하시고 보고서를 살펴보시면, 구매완료 외 장바구니 전환도 포함되어 있음을 확인하실 수 있으며, 이로 인해 전환수는 늘어났는데, 전환금액은 그대로라는 오해를 하고 있으신 것으로 보입니다.
 카페24는 플랫폼적으로 스크립트가 심어져 있는 사이트로 광고 전환 스크립트관련 오류가 발생할 확률은 매우 낮으니 참고해주시기 바랍니다.
 카페24 의 전환추적 관련하여서는 아래 가이드를 참고해주시기 바랍니다.  
-[https://naver.github.io/conversion-tracking/pages/02_ecom_platform_guide/#21-%EC%B9%B4%ED%8E%9824](https://naver.github.io/conversion-tracking/pages/02_ecom_platform_guide/#21-%EC%B9%B4%ED%8E%9824)
+[2.1. 카페24 임대몰 설정 가이드](https://naver.github.io/conversion-tracking/pages/02_ecom_platform_guide/#21-%EC%B9%B4%ED%8E%9824)
 
-
+Version: 240814_01
 
 
