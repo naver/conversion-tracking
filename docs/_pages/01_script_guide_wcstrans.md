@@ -381,7 +381,7 @@ Script에 해당 전환이벤트 를 삽입할 경우, 한글 전환이벤트명
 
 | **Property항목** | **세부항목** | **Data Type** | **의미** | **예시** | **Script예제** |
 | ---- | ---- | ---- | ---- | ---- | ---- |
-| id |  | string | 해당 전환 이벤트의 이용자 행동 ID. (광고주 사이트에서 생성하는 정보) | 주문번호: 20231220 | _conv.id= \"20231220\" |
+| id | (없음) | string | 해당 전환 이벤트의 이용자 행동 ID. (광고주 사이트에서 생성하는 정보) | 주문번호: 20231220 | _conv.id= \"20231220\" |
 | items(#1) | item.id | string | 행동의 대상이 되는 재화/용역의 ID (예: 상품ID) | 상품번호: 7789 | \_conv.items=[<br>  {  <br>    id:\"7786\",|
 |  | item.name <br>(WARNING!) | string | 행동의 대상이 되는 재화/용역의 이름 | 상품명: 설화수 탄력크림 | name:\"설화수 탄력크림\", |
 |  | item.category | string | 재화/용역의 카테고리 | 카테고리: 화장품/스킨케어/크림 | category:\"화장품/스킨케어/크림\", |
@@ -389,7 +389,8 @@ Script에 해당 전환이벤트 를 삽입할 경우, 한글 전환이벤트명
 |  | item.payAmount | number | 재화/용역의 금액 (위 재화/용역 ID에 대한 총 결제금액. 단가 아님) | 결제금액: 90,000원 | payAmount:90000, |
 |  | item.option | string | 재화/용역의 옵션 | 용량: 120ml | option: \"용량:120\" <br>  }<br>] |
 | items(#2) | (위 #1 내용 반복) | ... |  |  |  |
-| value |  | string | 복수개의 재화/용역의 전체 금액 (배송비 제외 권장) | 결제금액: 50,000원 | _conv.value=\"50000\" |
+| value | (없음)  | string | 복수개의 재화/용역의 전체 금액 (배송비 제외 권장) | 결제금액: 50,000원 | _conv.value=\"50000\" |
+| currency | (없음) | string | 전체 구매(purchase)단위에서 사용할 통화종류. 미국달러인 경우 'USD'로 표시. 별도 표시가 있지 않은 경우 대한민국원화(KRW)로 취급함 | 통화: 미국달러(USD) | _conv.currency=\"USD\" |
 
 > ##### WARNING
 > item.name (상품명)의 값에 single/double quotation이 있는 경우 광고전환추적을 위한 Script에 에러가 발생할 수 있습니다. item.name 의 값에서 single/double quotation을 제거하거나, 다른 문자로 대체해주시는 것을 강력하게 권장합니다. 
