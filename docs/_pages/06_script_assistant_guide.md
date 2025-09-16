@@ -1,0 +1,1 @@
+06_script_assistant_guide.md
