@@ -568,7 +568,3 @@ if (window.wcs) {
  
 </script>
 ```
-
-# 3. FAQ
-
-### FAQ목록
