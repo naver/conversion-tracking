@@ -587,15 +587,15 @@ A: 전환추적이 되지 않거나, 광고보고서에 전환지표가 발생�
 광고 Link_URL 에 다음과 같은 NaPm 파라미터를 붙이고, 최종 랜딩페이지까지 NaPm파라미터가 유지되는지 확인해보시기 바랍니다.  <br>
  <br>
 예시 NaPm 파라미터) NaPm=ct%3Dltfg01cg%7Cci%3D0za0003w4Ivz9giLF1oB%7Ctr%3Dsa%7Chk%3Dd60cbcba879cef5c2d2213ba59dea77a59c267fa <br>
- <br>
+<br>
 (b) 광고 연결 URL(link_url) 이 URL 포맷에 맞지 않거나, #(anchor)가 있는 경우 <br>
 광고 전환추적이 정상적으로 되기 위해서는 광고 연결URL(link_url)의 포맷이, 네이버광고에서 붙여주는 NaPm파라미터가 붙었을 때, 이 NaPm파라미터가 URL parameter로써 정상적으로 동작할 수 있는 포맷이어야 합니다.<br>
- <br>
+<br>
 다음과 같은 오류 Case가 있을 수 있습니다.  <br>
- <br>
+<br>
 (오류 Case1) 광고 연결 URL(link_url)에 ?가 2개 이상 있는 경우<br>
 URL에 ? 는 1개만 있어야 합니다. 2개 이상의 ?가 있는 경우, 해당 URL은 URL 포맷에 맞지 않아, 광고 클릭시 NaPm파라미터가 붙어도 정상적으로 동작하지 않아 광고 전환추적 또한 동작하지 않습니다. <br>
- <br>
+<br>
 틀린 link_url 예시) http://www.abc.com/index.html?product_id=342&category=32?utm_source=naver_sa&utm_medium=cpc(URL에 ?가 2개 있어, 이 뒤에 NaPm parameter가 붙어도 정상동작하지 않음.) <br>
  <br>
 (오류 Case2) 광고 연결 URL(link_url)에 #(anchor)가 있는 경우 <br>
