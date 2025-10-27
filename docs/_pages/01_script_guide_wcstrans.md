@@ -599,9 +599,9 @@ URL에 ? 는 1개만 있어야 합니다. 2개 이상의 ?가 있는 경우, 해
 틀린 link_url 예시) http://www.abc.com/index.html?product_id=342&category=32?utm_source=naver_sa&utm_medium=cpc(URL에 ?가 2개 있어, 이 뒤에 NaPm parameter가 붙어도 정상동작하지 않음.) <br>
  <br>
 (오류 Case2) 광고 연결 URL(link_url)에 #(anchor)가 있는 경우 <br>
-URL에 페이지의 특정 위치로 이동시키기 위한 #(anchor)가 있는 경우, 그 뒤에 NaPm 파라미터가 있어도, 이를 무시하는 브라우저가 많습니다. 이 경우에도 광고 클릭시 NaPm파라미터가 붙어도 정상적으로 동작하지 않아 광고 전환추적 또한 동작하지 않습니다. 
+URL에 페이지의 특정 위치로 이동시키기 위한 #(anchor)가 있는 경우, 그 뒤에 NaPm 파라미터가 있어도, 이를 무시하는 브라우저가 많습니다. 이 경우에도 광고 클릭시 NaPm파라미터가 붙어도 정상적으로 동작하지 않아 광고 전환추적 또한 동작하지 않습니다. <br>
  <br>
-틀린 link_url 예시) http://www.abc.com/index.html?product_id=342&category=32#event (URL 끝에 # 가 있어, 이 뒤에 NaPm parameter가 붙어도 정상동작하지 않음.) <br>
+틀린 link_url 예시) http://www.abc.com/index.html?product_id=342&category=32#event (URL 끝에 # 가 있어, 이 뒤에 NaPm parameter가 붙어도 정상동작하지 않음) <br>
  <br>
 (c) 스크립트가 정상적으로 설치되지 않은 경우<br>
 위 (a)와 같이 테스트를 해 보았고, 최종 랜딩페이지까지 NaPm이 전달 되지만 전환값이 없다면 스크립트에 이상이 있을 수 있습니다.<br>
