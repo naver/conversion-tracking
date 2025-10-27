@@ -266,7 +266,7 @@ A: 네이버 광고 전환 스크립트에 대한 문의 또는 설치 지원은
 Q: 모바일용 사이트에 대해 테스트를 해보고 싶습니다. 어떻게 하면 될까요? <br>
 A: 최근 많이 사용되는 브라우저들은 '모바일기기'로 보이도록 설정을 할 수 있습니다.  <br>
 크롬 브라우저에도 유사한 기능이 있으며 다음 도움말을 참고하시기 바랍니다. <br>
-[https://developer.chrome.com/docs/devtools/device-mode?hl=ko](https://developer.chrome.com/docs/devtools/device-mode) <br>
+[https://developer.chrome.com/docs/devtools/device-mode](https://developer.chrome.com/docs/devtools/device-mode?hl=ko) <br>
 
 Ver: 251027_01
 
