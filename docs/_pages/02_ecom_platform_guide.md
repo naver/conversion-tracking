@@ -198,11 +198,11 @@ Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 
 
 ③ 환경설정 ▶ 데이터연결 메뉴 클릭 하고 화면에서 '네이버 프리미엄 로그 분석(애널리틱스)' 를 클릭함
 
-(이미지 1번)
+![imweb_01]({{"/assets/img/imweb_01.png"| relative_url}})
 
 ④ 클릭하면 나오는 화면에서 '인증키' 부분에 '네이버 공통인증키'를 입력하고 우측 상단에 '저장' 버튼 클릭
 
-(이미지 2번)
+![imweb_02]({{"/assets/img/imweb_02.png"| relative_url}})
 
 ※ [참고] 전환 발생 위치 <br>
 ・ 회원가입 완료 : 회원가입 완료 시 추적  <br>
@@ -217,8 +217,6 @@ Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 
 . 고객센터(전화): 1877-7035  <br>
 . 채널 톡(채팅) 상담 : [https://navercts.channel.io/home](https://navercts.channel.io/home)  <br>
 . 공용 Email : navercts@nhndata.com <br>
-
-
 
 
 ## 2.6. 위사
@@ -269,4 +267,4 @@ Script 수동 삽입에 대해서는 네이버 광고전환분석 Script 공식 
  . 채널 톡(채팅) 상담 : [https://navercts.channel.io/home](https://navercts.channel.io/home) <br>
  . 공용 Email : navercts@nhndata.com <br>
 
-Ver: 240704_01
+Ver: 251031_01
