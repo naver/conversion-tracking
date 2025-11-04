@@ -20,9 +20,16 @@ lesson: 6
 ## 1.2. `어시스턴트` 설치 방법
 
 (1) 크롬브라우저를 준비합니다. <br>
-(2) 크롬 웹스토어(https://chromewebstore.google.com/)에 들어갑니다. <br>
+(2) 크롬 웹스토어 [(https://chromewebstore.google.com/)](https://chromewebstore.google.com/)에 들어갑니다. <br>
 (3) `네이버 전환 스크립트 어시스턴트` 를 검색하고, 검색결과에서 프로그램을 선택합니다. <br>
 (4) 앱 상세 화면에서 우측 상단에 `Chrome에 추가`버튼을 클릭합니다. <br>
+
+또는 
+
+(1) 크롬브라우저를 준비합니다. <br>
+(2) [네이버 전환 스크립트 어시스턴트 앱 상세페이지](https://chromewebstore.google.com/detail/hkdficinbkdaklkemlhbdieokgcdcame?utm_source=item-share-cb) 로 이동합니다.  <br>
+(3) 앱 상세 화면에서 우측 상단에 `Chrome에 추가`버튼을 클릭합니다. <br>
+
 
 > ##### WARNING
 > `네이버 전환 스크립트 어시스턴트`는 크롬확장프로그램(=Chrome Extension)의 일종으로, 크롬브라우저에서 정상적으로 동작합니다. (크롬브라우저 외의 브라우저에서는 적절한 테스트가 되어 있지 않습니다)<br>
