@@ -582,7 +582,7 @@ Q: (SA, GFA공통) 광고 전환추적이 되지 않습니다. (광고 보고서
 
 A: 전환추적이 되지 않거나, 광고보고서에 전환지표가 발생하지 않는 경우에는 다음과 같은 매우 다양한 원인이 있을 수 있습니다.
 
-(a) NaPm 파라미터가 랜딩페이지까지 전달되지 않은 경우 (랜딩페이지에서 사이트가 redirection되면서 NaPm파라미터가 사라지는 경우)<br>
+(a-1) NaPm 파라미터가 랜딩페이지까지 전달되지 않은 경우 (랜딩페이지에서 사이트가 redirection되면서 NaPm파라미터가 사라지는 경우)<br>
 광고 전환추적이 정상적으로 되고, 광고보고서에 전환지표가 제공되기 위해서는, 광고 클릭시 발생하는 NaPm파라미터가 최종 랜딩페이지까지 전달되어야 합니다. <br>
 이렇게 사이트에서 redirection을 하는 경우는 다음과 같은 경우가 있을 수 있습니다.<br>
  . 사이트에 접속한 단말기에 따라 적절한 페이지로 이동 시키는 경우 (예: 모바일기기로 motor-abc.com 를 들어갈 경우, 웹서버가 m.motor-abc.com 으로 이동시키는 경우)<br>
@@ -592,7 +592,18 @@ A: 전환추적이 되지 않거나, 광고보고서에 전환지표가 발생�
 예시 NaPm 파라미터) NaPm=ct%3Dltfg01cg%7Cci%3D0za0003w4Ivz9giLF1oB%7Ctr%3Dsa%7Chk%3Dd60cbcba879cef5c2d2213ba59dea77a59c267fa <br>
 <br>
 해결방법) 랜딩페이지에서 사이트가 redirection되면서 NaPm파라미터가 사라지는 것은 순수하게 사이트의 코드에 의해서 발생하는 것 입니다. redirection될 때 네이버 NaPm파라미터가 유지되도록 사이트 코드 혹은 설정을 수정하셔야 합니다.<br>
-
+<br>
+(a-2) NaPm 파라미터가 랜딩페이지까지 전달되면서, 인코딩 혹은 디코딩이 되는 경우<br>
+광고 전환추적이 정상적으로 되고, 광고보고서에 전환지표가 제공되기 위해서는, 광고 클릭시 발생하는 NaPm파라미터가 네이버광고에서 발생한 그대로 최종 랜딩페이지까지 전달되어야 합니다. <br>
+그런데 광고클릭후 사이트에 접속하면서 내부적으로 redirection을 하면서, NaPm파라미터를 인코딩 혹은 디코딩하는 경우가 있으며 이런 경우 최종 랜딩페이지까지 NaPm파라미터가 전달되어도 값이 변형되어 정상적으로 전환추적이  되지 않습니다. <br>
+<br>
+예시) <br>
+네이버광고 클릭 했을 때의 URL) http://www.motor-abc.com/index.html?NaPm=ct%3Dltfg01cg%7Cci%3D0za0003w4Ivz9giLF1oB%7Ctr%3Dsa%7Chk%3Dd60cbcba879cef5c2d2213ba59dea77a59c267fa <br>
+광고주 사이트에 접속한 뒤 redirection되면서 NaPm파라미터값 부분이 인코딩이 되는 경우) http://www.motor-abc.com/index.html?NaPm%253Dct%253Dltfg01cg%257Cci%253D0za0003w4Ivz9giLF1oB%257Ctr%253Dsa%257Chk%253Dd60cbcba879cef5c2d2213ba59dea77a59c267fa <br>
+광고주 사이트에 접속한 뒤 redirection되면서 NaPm파라미터값 부분이 디코딩이 되는 경우) http://www.motor-abc.com/index.html?NaPm=ct=ltfg01cg|ci=0za0003w4Ivz9giLF1oB|tr=sa|hk=d60cbcba879cef5c2d2213ba59dea77a59c267fa <br>
+<br>
+해결방법) 랜딩페이지에서 사이트가 redirection되면서 NaPm파라미터가 인코딩/디코딩 되는 것은 순수하게 사이트의 코드에 의해서 발생하는 것 입니다. redirection될 때 네이버 NaPm파라미터가 인코딩/디코딩 없이 그대로 랜딩페이지까지 유지되도록 사이트 코드 혹은 설정을 수정하셔야 합니다.<br>
+<br>
 (b) 광고 연결 URL(link_url) 이 URL 포맷에 맞지 않거나, #(anchor)가 있는 경우 <br>
 광고 전환추적이 정상적으로 되기 위해서는 광고 연결URL(link_url)의 포맷이, 네이버광고에서 붙여주는 NaPm파라미터가 붙었을 때, 이 NaPm파라미터가 URL parameter로써 정상적으로 동작할 수 있는 포맷이어야 합니다.<br>
 <br>
