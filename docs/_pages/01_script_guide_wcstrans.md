@@ -597,15 +597,15 @@ A: 전환추적이 되지 않거나, 광고보고서에 전환지표가 발생�
 광고 전환추적이 정상적으로 되고, 광고보고서에 전환지표가 제공되기 위해서는, 광고 클릭시 발생하는 NaPm파라미터가 네이버광고에서 발생한 그대로 최종 랜딩페이지까지 전달되어야 합니다. <br>
 그런데 광고클릭후 사이트에 접속하면서 내부적으로 redirection을 하면서, NaPm파라미터를 인코딩 혹은 디코딩하는 경우가 있으며 이런 경우 최종 랜딩페이지까지 NaPm파라미터가 전달되어도 값이 변형되어 정상적으로 전환추적이  되지 않습니다. <br>
 <br>
-예시) <br>
+예시) 광고클릭 후 내부적으로 로그 수집 후 상품상세페이지로 이동하는 경우<br>
 네이버광고 클릭 했을 때의 URL <br>
-=> http://www.motor-abc.com/index.html?NaPm=ct%3Dltfg01cg%7Cci%3D0za0003w4Ivz9giLF1oB%7Ctr%3Dsa%7Chk%3Dd60cbcba879cef5c2d2213ba59dea77a59c267fa <br>
+=> http://www.motor-abc.com/log.html?NaPm=ct%3Dltfg01cg%7Cci%3D0za0003w4Ivz9giLF1oB%7Ctr%3Dsa%7Chk%3Dd60cbcba879cef5c2d2213ba59dea77a59c267fa <br>
 <br>
-광고주 사이트에 접속한 뒤 redirection되면서 NaPm파라미터값 부분이 인코딩이 되는 경우 <br>
-=> http://www.motor-abc.com/index.html?NaPm%253Dct%253Dltfg01cg%257Cci%253D0za0003w4Ivz9giLF1oB%257Ctr%253Dsa%257Chk%253Dd60cbcba879cef5c2d2213ba59dea77a59c267fa <br>
+광고주 사이트에 접속한 뒤 상품페이지(products/OOO)로 redirection 되면서 NaPm파라미터값 부분이 인코딩이 되는 경우 <br>
+=> http://www.motor-abc.com/products/4233453?NaPm%253Dct%253Dltfg01cg%257Cci%253D0za0003w4Ivz9giLF1oB%257Ctr%253Dsa%257Chk%253Dd60cbcba879cef5c2d2213ba59dea77a59c267fa <br>
 <br>
-광고주 사이트에 접속한 뒤 redirection되면서 NaPm파라미터값 부분이 디코딩이 되는 경우<br>
-=> http://www.motor-abc.com/index.html?NaPm=ct=ltfg01cg|ci=0za0003w4Ivz9giLF1oB|tr=sa|hk=d60cbcba879cef5c2d2213ba59dea77a59c267fa <br>
+광고주 사이트에 접속한 뒤 상품페이지(products/OOO)로 redirection 되면서 NaPm파라미터값 부분이 디코딩이 되는 경우<br>
+=> http://www.motor-abc.com/products/4233453?NaPm=ct=ltfg01cg|ci=0za0003w4Ivz9giLF1oB|tr=sa|hk=d60cbcba879cef5c2d2213ba59dea77a59c267fa <br>
 <br>
 해결방법) 랜딩페이지에서 사이트가 redirection되면서 NaPm파라미터가 인코딩/디코딩 되는 것은 순수하게 사이트의 코드에 의해서 발생하는 것 입니다. redirection될 때 네이버 NaPm파라미터가 인코딩/디코딩 없이 그대로 랜딩페이지까지 유지되도록 사이트 코드 혹은 설정을 수정하셔야 합니다.<br>
 <br>
