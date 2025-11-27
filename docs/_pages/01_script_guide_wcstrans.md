@@ -641,6 +641,60 @@ URL에 페이지의 특정 위치로 이동시키기 위한 #(anchor)가 있는 
 사이트에서 특정 전환유형에 대한 행동이 발생하더라도, 광고 보고서에서는 광고유입후 발생하는 전환행동에 대해서만 보고서에 제공됩니다. <br>
 예를 들어, 구매(purchase)에 대해서 전환스크립트를 설치하였어도, 광고 유입 없이 구매/결제만 발생한 경우에는 광고보고서에 값이 제공되지 않습니다. <br>
 
+(f) 광고 랜딩 사이트의 host와 전환이 일어나는 사이트의 host가 다른 경우 <br>
+ <br>
+※ host란? <br>
+URL에서 host(=host name)는 서버의 주소입니다 <br>
+예) `https://m.showroom.motor-abc.com/products/5456`  과 같은 URL에서 <br>
+`m.showroom.motor-abc.com` 부분을 의미합니다. <br>
+ <br>
+※ 루트 도메인(Root Domain) 이란? <br>
+도메인 등록 업체에서 실제로 돈을 내고 구매하는 최소 단위 <br>
+예) `https://m.showroom.motor-abc.com/products/5456` 과 같은 URL에서 <br>
+`motor-abc.com` 부분을 의미합니다. <br>
+ <br>
+(f-1) 광고 랜딩 사이트의 host와 전환이 일어나는 사이트의 host가 다르지만, 루트 도메인(Root Domain)이 같은 경우 <br>
+광고 랜딩 사이트의 host와 전환이 일어나는 사이트의 host가 다르지만, 루트 도메인(Root Domain)이 같은 경우, 원활하게 전환추적이 되기 위해서는 약간의 설정이 필요합니다. <br>
+ <br>
+`페이지별 공통설정 Script` 에서, `wcs.inflow()` 부분을 다음과 같이 설정해주셔야 합니다.  <br>
+ <br>
+```html
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if (window.wcs) {
+    if(!wcs_add) var wcs_add = {};
+    wcs_add["wa"] = "AccountId";      // 사이트 식별자 (=네이버공통키, na_account_id)
+    wcs.inflow("루트도메인"); // Cookie의 Domain설정
+ }
+</script>
+```
+<br>
+예) 랜딩과 전환 URL이 host는 다르지만, 루트 도메인(Root Domain)은 같은 경우 <br>
+(랜딩) https://m.showroom.motor-abc.com/products/5456 <br>
+(구매전환) https://pay.motor-abc.com/purchase_complete.html?order_id=5678 <br>
+ <br>
+`페이지별 공통설정 Script`는 다음과 같이 설정함(랜딩페이지가 속한 host와 전환이벤트가 발생하는 host 모두 동일하게 설정) <br>
+ <br>
+```html
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if (window.wcs) {
+    if(!wcs_add) var wcs_add = {};
+    wcs_add["wa"] = "AccountId";      // 사이트 식별자 (=네이버공통키, na_account_id)
+    wcs.inflow("motor-abc.com"); // Cookie의 Domain설정
+ }
+</script>
+```
+ <br>
+(f-2) 광고 랜딩 사이트의 host와 전환이 일어나는 사이트의 host가 다른데, 루트 도메인(Root Domain)까지 다른 경우 <br>
+ <br>
+예) 랜딩 사이트와 전환이 일어나는 사이트의 루트 도메인(Root Domain)이 다른 경우 <br>
+ <br>
+(랜딩) https://m.motor-abc.com/OOO (루트 도메인: motor-abc.com) <br>
+(구매전환) https://pay.motor-abc.co.kr/OOO (루트 도메인: motor-abc.co.kr) <br>
+ <br>
+이런 경우에 대해 쉽게 전환을 측정할 방법이 현재는 존재하지 않습니다. 양해부탁드립니다. <br>
+
 #### Q2
 Q: (SA, GFA공통) (카페24 임대몰) 전환수에 비해 전환금액이 너무 작습니다. <br>
 (유사질문) 전환수는 증가하였는데, 전환금액이 그대로입니다.
@@ -651,5 +705,5 @@ SA보고서 다차원 보고서 '전환'을 선택하시고 보고서를 살펴�
 카페24 의 전환추적 관련하여서는 아래 가이드를 참고해주시기 바랍니다.  <br>
 [2.1. 카페24 임대몰 설정 가이드](https://naver.github.io/conversion-tracking/pages/02_ecom_platform_guide/#21-%EC%B9%B4%ED%8E%9824) <br>
 
-Version: 20251030_01
+Version: 20251127_01
 
