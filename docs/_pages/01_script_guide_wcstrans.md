@@ -689,7 +689,6 @@ if (window.wcs) {
 (f-2) 광고 랜딩 사이트의 host와 전환이 일어나는 사이트의 host가 다른데, 루트 도메인(Root Domain)까지 다른 경우 <br>
  <br>
 예) 랜딩 사이트와 전환이 일어나는 사이트의 루트 도메인(Root Domain)이 다른 경우 <br>
- <br>
 (랜딩) https://m.motor-abc.com/OOO (루트 도메인: motor-abc.com) <br>
 (구매전환) https://pay.motor-abc.co.kr/OOO (루트 도메인: motor-abc.co.kr) <br>
  <br>
