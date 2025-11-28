@@ -663,15 +663,15 @@ URL에서 host(=host name)는 서버의 주소입니다 <br>
 <script type="text/javascript">
 if (window.wcs) {
     if(!wcs_add) var wcs_add = {};
-    wcs_add["wa"] = "AccountId";      // 사이트 식별자 (=네이버공통키, na_account_id)
+    wcs_add["wa"] = "AccountId";      // 사이트ID (=네이버공통키, na_account_id)
     wcs.inflow("루트도메인"); // Cookie의 Domain설정
  }
 </script>
 ```
 <br>
 예) 랜딩과 전환 URL이 host는 다르지만, 루트 도메인(Root Domain)은 같은 경우 <br>
-(랜딩) https://m.showroom.motor-abc.com/products/5456 <br>
-(구매전환) https://pay.motor-abc.com/purchase_complete.html?order_id=5678 <br>
+(랜딩) https://m.showroom.motor-abc.com/products/5456 (host: m.showroom.motor-abc.com) <br>
+(구매전환) https://pay.motor-abc.com/purchase_complete.html?order_id=5678 (host: pay.motor-abc.com) <br>
  <br>
 `페이지별 공통설정 Script`는 다음과 같이 설정함(랜딩페이지가 속한 host와 전환이벤트가 발생하는 host 모두 동일하게 설정) <br>
  <br>
@@ -680,7 +680,7 @@ if (window.wcs) {
 <script type="text/javascript">
 if (window.wcs) {
     if(!wcs_add) var wcs_add = {};
-    wcs_add["wa"] = "AccountId";      // 사이트 식별자 (=네이버공통키, na_account_id)
+    wcs_add["wa"] = "AccountId";      // 사이트ID (=네이버공통키, na_account_id)
     wcs.inflow("motor-abc.com"); // Cookie의 Domain설정
  }
 </script>
