@@ -670,7 +670,7 @@ if (window.wcs) {
 ```
 <br>
 예) 랜딩과 전환 URL이 host는 다르지만, 루트 도메인(Root Domain)은 같은 경우 <br>
-(랜딩) https://m.showroom.motor-abc.com/products/5456 (host: m.showroom.motor-abc.com) <br>
+(광고랜딩) https://m.showroom.motor-abc.com/products/5456 (host: m.showroom.motor-abc.com) <br>
 (구매전환) https://pay.motor-abc.com/purchase_complete.html?order_id=5678 (host: pay.motor-abc.com) <br>
  <br>
 `페이지별 공통설정 Script`는 다음과 같이 설정함(랜딩페이지가 속한 host와 전환이벤트가 발생하는 host 모두 동일하게 설정) <br>
@@ -689,7 +689,7 @@ if (window.wcs) {
 <u>(f-2) 광고 랜딩 사이트의 host와 전환이 일어나는 사이트의 host가 다른데, 루트 도메인(Root Domain)까지 다른 경우</u> <br>
  <br>
 예) 랜딩 사이트와 전환이 일어나는 사이트의 루트 도메인(Root Domain)이 다른 경우 <br>
-(랜딩) https://m.motor-abc.com/OOO (루트 도메인: motor-abc.com) <br>
+(광고랜딩) https://m.motor-abc.com/OOO (루트 도메인: motor-abc.com) <br>
 (구매전환) https://pay.motor-abc.co.kr/OOO (루트 도메인: motor-abc.co.kr) <br>
  <br>
 이런 경우에 대해 쉽게 전환을 측정할 방법이 현재는 존재하지 않습니다. 양해부탁드립니다. <br>
