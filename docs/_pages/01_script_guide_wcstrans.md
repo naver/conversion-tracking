@@ -152,10 +152,10 @@ wcslog.js는 각종 이벤트를 수집하고 서버로 전송하는 method를 �
 > 만약 다른 사이트와 내 사이트가 sub domain 혹은 sub path 로 구분이 된다면 sub domain 혹은 sub path 까지 포함된 host 값을 site-domain부분에 넣어주시기 바랍니다 
 > 
 예1) sub domain으로 내 사이트와 다른 사이트가 구분이 되는 경우. 내 사이트는 `aaa.abc.com` 인데, 타 사이트는 `bbb.abc.com` 일 때  
-=> cookie domain: `aaa.abc.com` 을 넣습니다.
+➔ cookie domain: `aaa.abc.com` 을 넣습니다.
 >
 예2) sub path로 내 사이트와 다른 사이트가 구분이 되는 경우. 내 사이트는 `www.abc.com/aaa` 인데, 타 사이트는 `www.abc.com/bbb` 일 때
-=> cookie domain: `www.abc.com/aaa` 를 넣습니다.
+➔ cookie domain: `www.abc.com/aaa` 를 넣습니다.
 {: .block-warning }
 
 #### (4) PV(page view) 이벤트 전송
@@ -599,13 +599,13 @@ if (window.wcs) {
 <br>
 예시) 광고클릭 후 내부적으로 로그 수집 후 상품상세페이지로 이동하는 경우<br>
 네이버광고 클릭 했을 때의 URL (정상) <br>
-=> http://www.motor-abc.com/log.html?NaPm=ct%3Dltfg01cg%7Cci%3D0za0003w4Ivz9giLF1oB%7Ctr%3Dsa%7Chk%3Dd60cbcba879cef5c2d2213ba59dea77a59c267fa <br>
+➔ http://www.motor-abc.com/log.html?NaPm=ct%3Dltfg01cg%7Cci%3D0za0003w4Ivz9giLF1oB%7Ctr%3Dsa%7Chk%3Dd60cbcba879cef5c2d2213ba59dea77a59c267fa <br>
 <br>
 광고주 사이트에 접속한 뒤 상품페이지(products/OOO)로 redirection 되면서 NaPm파라미터값 부분이 인코딩이 되는 경우 (오류) <br>
-=> http://www.motor-abc.com/products/4233453?NaPm%253Dct%253Dltfg01cg%257Cci%253D0za0003w4Ivz9giLF1oB%257Ctr%253Dsa%257Chk%253Dd60cbcba879cef5c2d2213ba59dea77a59c267fa <br>
+➔ http://www.motor-abc.com/products/4233453?NaPm%253Dct%253Dltfg01cg%257Cci%253D0za0003w4Ivz9giLF1oB%257Ctr%253Dsa%257Chk%253Dd60cbcba879cef5c2d2213ba59dea77a59c267fa <br>
 <br>
 광고주 사이트에 접속한 뒤 상품페이지(products/OOO)로 redirection 되면서 NaPm파라미터값 부분이 디코딩이 되는 경우 (오류) <br>
-=> http://www.motor-abc.com/products/4233453?NaPm=ct=ltfg01cg|ci=0za0003w4Ivz9giLF1oB|tr=sa|hk=d60cbcba879cef5c2d2213ba59dea77a59c267fa <br>
+➔ http://www.motor-abc.com/products/4233453?NaPm=ct=ltfg01cg|ci=0za0003w4Ivz9giLF1oB|tr=sa|hk=d60cbcba879cef5c2d2213ba59dea77a59c267fa <br>
 <br>
 해결방법) 랜딩페이지에서 사이트가 redirection되면서 NaPm파라미터가 인코딩/디코딩 되는 것은 순수하게 사이트의 코드에 의해서 발생하는 것 입니다. redirection될 때 네이버 NaPm파라미터가 인코딩/디코딩 없이 그대로 랜딩페이지까지 유지되도록 사이트 코드 혹은 설정을 수정하셔야 합니다.<br>
 <br>
