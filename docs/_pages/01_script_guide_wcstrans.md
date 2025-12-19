@@ -586,10 +586,9 @@ if (window.wcs) {
 원인 파악을 위한 테스트 진행시, 테스트를 용이하게 하실 수 있도록 '네이버 전환 스크립트 어시스턴트' 라는 Chrome  Extension프로그램이 준비되어 있습니다. <br>
 가이드가 준비되어 있으니 참고하셔서 테스트를 하시면, 현황과 원인 파악을 보다 쉽게 하실 수 있을 것입니다. <br>
  <br>
-■ 가이드 <br>
- - [https://naver.github.io/conversion-tracking/pages/06_script_assistant_guide] <br>
- <br>
- 
+■ 가이드
+ - [https://naver.github.io/conversion-tracking/pages/06_script_assistant_guide](https://naver.github.io/conversion-tracking/pages/06_script_assistant_guide)
+  
 <u>(a-1) NaPm 파라미터가 랜딩페이지까지 전달되지 않은 경우 (랜딩페이지에서 사이트가 redirection되면서 NaPm파라미터가 사라지는 경우)</u><br>
 광고 전환추적이 정상적으로 되고, 광고보고서에 전환지표가 제공되기 위해서는, 광고 클릭시 발생하는 NaPm파라미터가 최종 랜딩페이지까지 전달되어야 합니다. <br>
 이렇게 사이트에서 redirection을 하는 경우는 다음과 같은 경우가 있을 수 있습니다.<br>
