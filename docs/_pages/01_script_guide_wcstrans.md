@@ -585,7 +585,7 @@ if (window.wcs) {
 참고로 현황 및 원인 파악을 위해서는 테스트를 해보는 것이 가장 빠른 방법이며, <br>
 원인 파악을 위한 테스트 진행시, 테스트를 용이하게 하실 수 있도록 '네이버 전환 스크립트 어시스턴트' 라는 Chrome  Extension프로그램이 준비되어 있습니다. <br>
 가이드가 준비되어 있으니 참고하셔서 테스트를 하시면, 현황과 원인 파악을 보다 쉽게 하실 수 있을 것입니다. <br>
- <br>
+
 ■ 네이버 전환 스크립트 어시스턴트 가이드<br>
  . [https://naver.github.io/conversion-tracking/pages/06_script_assistant_guide/](https://naver.github.io/conversion-tracking/pages/06_script_assistant_guide/)
   
