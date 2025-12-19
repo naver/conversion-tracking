@@ -589,7 +589,7 @@ if (window.wcs) {
 ※ 네이버 전환 스크립트 어시스턴트 가이드<br>
  . [https://naver.github.io/conversion-tracking/pages/06_script_assistant_guide/](https://naver.github.io/conversion-tracking/pages/06_script_assistant_guide/)
 
-<u>**■ 전환지표가 발생하지 않는 다양한 원인들**</u>
+**<u>■ 전환지표가 발생하지 않는 다양한 원인들</u>**
 
 <u>(a-1) NaPm 파라미터가 랜딩페이지까지 전달되지 않은 경우 (랜딩페이지에서 사이트가 redirection되면서 NaPm파라미터가 사라지는 경우)</u><br>
 광고 전환추적이 정상적으로 되고, 광고보고서에 전환지표가 제공되기 위해서는, 광고 클릭시 발생하는 NaPm파라미터가 최종 랜딩페이지까지 전달되어야 합니다. <br>
