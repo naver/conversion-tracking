@@ -12,6 +12,7 @@ layout: post
  - [네이버 광고 웹 전환 추적 Script 테스트 가이드](https://naver.github.io/conversion-tracking/pages/04_trans_script_test_guide/)
  - [네이버 광고 웹 전환 추적 신 스크립트(trans) 전환가이드](https://naver.github.io/conversion-tracking/pages/05_cnv_to_trans_guide/)
  - [네이버 전환 스크립트 어시스턴트 가이드](https://naver.github.io/conversion-tracking/pages/06_script_assistant_guide/)
+ - [네이버 애널리틱스 설치가이드](https://naver.github.io/conversion-tracking/pages/07_naver_analytics_guide/)
 
 
 
