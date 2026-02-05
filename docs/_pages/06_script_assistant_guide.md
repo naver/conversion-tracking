@@ -400,7 +400,7 @@ A: 최근 많이 사용되는 브라우저들은 '모바일기기'로 보이도�
 크롬 브라우저에도 유사한 기능이 있으며 다음 도움말을 참고하시기 바랍니다. <br>
 [https://developer.chrome.com/docs/devtools/device-mode](https://developer.chrome.com/docs/devtools/device-mode?hl=ko) <br>
 
-Ver: 251110_01
+Ver: 251110_02
 
 
 
