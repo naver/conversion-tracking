@@ -1,7 +1,7 @@
 ---
 title: 네이버 애널리틱스 설치가이드
 layout: post
-lesson: 6
+lesson: 7
 ---
 ------
 
